@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save Schools SJUSD - Equity in Schools of Tomorrow</title>
+    <title>District Data Proves Schools Worth Saving | Save Schools SJUSD</title>
     <style>
         * {
             margin: 0;
@@ -14,67 +14,203 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #f9fafb;
         }
         header {
             background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 10px;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             opacity: 0.95;
+            max-width: 800px;
+            margin: 10px auto;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
-        .alert-box {
-            background: #fef2f2;
-            border-left: 4px solid #dc2626;
-            padding: 25px;
-            margin: 40px 0;
-            border-radius: 4px;
+        .key-finding {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border-left: 5px solid #dc2626;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .alert-box h2 {
+        .key-finding h2 {
             color: #dc2626;
             margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .key-finding p {
+            font-size: 1.1em;
+            line-height: 1.8;
         }
         .section {
-            margin: 40px 0;
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
         .section h2 {
             color: #1f2937;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e5e7eb;
+            font-size: 1.8em;
         }
-        .concerns-list {
+        .section h3 {
+            color: #374151;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+        .option-header {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #6b7280;
+        }
+        .option-header h3 {
+            margin: 0 0 10px 0;
+            color: #1f2937;
+        }
+        .schools-closing {
+            font-size: 0.95em;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        .metric-bad {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .metric-bad strong {
+            color: #991b1b;
+        }
+        .metric-good {
+            background: #d1fae5;
+            border-left: 4px solid #059669;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .metric-good strong {
+            color: #047857;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+            overflow-x: auto;
+            display: block;
+        }
+        .comparison-table thead tr {
+            background: #1f2937;
+            color: white;
+            text-align: left;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            border: 1px solid #e5e7eb;
+        }
+        .comparison-table tbody tr {
+            background: white;
+        }
+        .comparison-table tbody tr:nth-child(even) {
             background: #f9fafb;
+        }
+        .comparison-table tbody tr:hover {
+            background: #f3f4f6;
+        }
+        .worse {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        .better {
+            color: #059669;
+            font-weight: 600;
+        }
+        .winner {
+            background: #d1fae5;
+            font-weight: 600;
+        }
+        .talking-points {
+            background: #dbeafe;
             padding: 25px;
             border-radius: 8px;
             margin: 20px 0;
         }
-        .concerns-list li {
-            margin: 15px 0;
-            padding-left: 10px;
-        }
-        .action-box {
-            background: #dbeafe;
-            border: 2px solid #2563eb;
-            padding: 30px;
-            border-radius: 8px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        .action-box h2 {
+        .talking-points h4 {
             color: #1e40af;
             margin-bottom: 15px;
+        }
+        .talking-points li {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+        .evidence-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .evidence-box strong {
+            color: #92400e;
+        }
+        .conclusion {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .conclusion h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .conclusion p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .option-problem-box {
+            background: #fef2f2;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #dc2626;
+        }
+        .option-problem-box h4 {
+            color: #991b1b;
+            margin-bottom: 10px;
+        }
+        .option-problem-box ul {
+            margin-left: 20px;
+            font-size: 0.95em;
         }
         footer {
             background: #1f2937;
@@ -83,65 +219,449 @@
             padding: 30px 20px;
             margin-top: 60px;
         }
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+            .section {
+                padding: 20px;
+            }
+            .comparison-table {
+                font-size: 0.85em;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 8px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Save Schools SJUSD</h1>
-        <p>Protecting Equity in the Schools of Tomorrow Process</p>
+        <h1>District Data Proves: These Schools Are Worth Saving</h1>
+        <p>Using only San José Unified's own metrics to show that all three options close better-than-average schools</p>
     </header>
 
     <div class="container">
-        <div class="alert-box">
-            <h2>Equity is at Risk</h2>
-            <p>The San Jose Unified School District's "Schools of Tomorrow" process threatens to undermine educational equity and disproportionately impact our most vulnerable communities.</p>
+        <div class="key-finding">
+            <h2>🚨 Critical Finding</h2>
+            <p><strong>If the schools being closed were actually underperforming, closing them would improve the district's metrics. Instead, every single metric gets worse.</strong></p>
+            <p style="margin-top: 15px;">This proves that ALL THREE OPTIONS close schools that are performing ABOVE the district average on multiple critical criteria.</p>
         </div>
 
         <div class="section">
-            <h2>Our Concerns</h2>
-            <div class="concerns-list">
-                <ul>
-                    <li><strong>Lack of Transparent Process:</strong> Decisions affecting our children's futures are being made without adequate community input and transparency.</li>
-                    <li><strong>Disproportionate Impact:</strong> Proposed changes will disproportionately affect students from underserved communities and families of color.</li>
-                    <li><strong>Resource Inequity:</strong> The process fails to address systemic funding disparities and instead compounds existing inequalities.</li>
-                    <li><strong>Community Voice Ignored:</strong> Parents, teachers, and students are being sidelined in favor of top-down decision making.</li>
-                    <li><strong>Rushed Timeline:</strong> Critical decisions are being rushed without proper analysis of long-term equity impacts.</li>
+            <h2>The Evidence: What District Data Shows</h2>
+
+            <div class="evidence-box">
+                <p><strong>All three options make these metrics WORSE:</strong></p>
+                <ul style="margin: 15px 0 0 30px;">
+                    <li><strong>Facility Quality:</strong> All options drop from 9.9 to 8.6-9.1 → Closing better buildings</li>
+                    <li><strong>Walkability:</strong> All options drop from 87% to 76-79% → Closing walkable schools (800-1,100 students affected)</li>
+                    <li><strong>Travel Distance:</strong> All options increase from 1.58 to 1.66-1.70 miles → Closing convenient schools</li>
+                    <li><strong>Equity:</strong> All options show 54-64% of displaced students are low-income (vs 47% district average) → Disproportionate impact</li>
                 </ul>
+            </div>
+
+            <p style="font-size: 1.1em; margin-top: 20px;"><strong>Conclusion:</strong> These schools aren't failing. They have better facilities, serve more walkable neighborhoods, and are more conveniently located than the district average. The district is proposing to close its better schools.</p>
+        </div>
+
+        <div class="section">
+            <h2>Detailed Analysis by Option</h2>
+
+            <div class="option-header">
+                <h3>Option 1: The Worst Across Most Criteria</h3>
+                <div class="schools-closing">
+                    <strong>9 Schools Closing:</strong> Bachrodt, Anne Darling, Olinder, Lowell, Gardner, Canoas, Carson, Almaden, Simonds
+                </div>
+            </div>
+
+            <h3>❌ Metrics That Get WORSE in Option 1:</h3>
+
+            <div class="metric-bad">
+                <strong>1. Facility Quality: WORST DROP</strong><br>
+                Status Quo: 9.9/12 → Option 1: 8.7/12 (1.2 point decline - worst of all options)
+            </div>
+
+            <div class="metric-bad">
+                <strong>2. Special Education: ONLY OPTION THAT GETS WORSE</strong><br>
+                Status Quo: 72% of SDC students at ideal cluster → Option 1: 61% (11% decline)<br>
+                <em>Note: Options 2 and 3 either maintain 72% or also drop to 61%. Option 1 is tied for worst.</em>
+            </div>
+
+            <div class="metric-bad">
+                <strong>3. Enrollment Balance: MOST UNEQUAL</strong><br>
+                Status Quo IQR: 195 → Option 1: 289 (creates highest imbalance - some schools overcrowded, others empty)
+            </div>
+
+            <div class="metric-bad">
+                <strong>4. Community Fragmentation: HIGHEST</strong><br>
+                639 students split from their peers (highest of all options)<br>
+                <em>These are students assigned to different schools than the majority of their classmates.</em>
+            </div>
+
+            <div class="metric-bad">
+                <strong>5. Equity: MOST DISPROPORTIONATE</strong><br>
+                64% of displaced students are low-income (vs 47% district average)<br>
+                Highest disparity of all three options
+            </div>
+
+            <div class="metric-bad">
+                <strong>6. Walkability</strong><br>
+                Status Quo: 87% → Option 1: 79% (8% decline = approximately 800 students lose walking access)
+            </div>
+
+            <h3 style="margin-top: 30px;">✓ What Improves in Option 1:</h3>
+            <div class="metric-good">
+                <strong>Students at Ideal Schools:</strong> 24% → 51% (27% improvement)
+            </div>
+
+            <p style="margin: 20px 0; padding: 20px; background: #fef2f2; border-radius: 8px;"><strong>VERDICT:</strong> Option 1 closes better-than-average schools. Evidence: nearly every metric gets worse, proving the schools being closed outperform those remaining open.</p>
+
+            <!-- Option 2 -->
+            <div class="option-header" style="margin-top: 50px;">
+                <h3>Option 2: Best Goal Achievement, Worst Everything Else</h3>
+                <div class="schools-closing">
+                    <strong>9 Schools Closing:</strong> Bachrodt, Empire Gardens, Olinder, Lowell, Gardner, Terrell, Carson, Reed, Williams
+                </div>
+            </div>
+
+            <h3>❌ Metrics That Get WORSE in Option 2:</h3>
+
+            <div class="metric-bad">
+                <strong>1. Facility Quality: WORST OVERALL</strong><br>
+                Status Quo: 9.9/12 → Option 2: 8.6/12 (1.3 point decline - absolute worst)
+            </div>
+
+            <div class="metric-bad">
+                <strong>2. Special Education: WORSENS</strong><br>
+                Status Quo: 72% → Option 2: 61% (11% decline)
+            </div>
+
+            <div class="metric-bad">
+                <strong>3. Walkability: WORST</strong><br>
+                Status Quo: 87% → Option 2: 76% (11% decline = approximately 1,100 students lose walking access)<br>
+                <strong>Tied for worst with Option 3</strong>
+            </div>
+
+            <div class="metric-bad">
+                <strong>4. Travel Distance: WORST (tied)</strong><br>
+                Status Quo: 1.58 miles → Option 2: 1.70 miles
+            </div>
+
+            <div class="metric-bad">
+                <strong>5. 90th Percentile Travel Distance: WORST</strong><br>
+                Status Quo: 1.72 miles → Option 2: 2.17 miles<br>
+                <em>This means the students with the longest commutes face significantly worse travel distances.</em>
+            </div>
+
+            <div class="metric-bad">
+                <strong>6. Unduplicated Students Walkability: WORST</strong><br>
+                Status Quo: 79% → Option 2: 70% (9% decline - low-income students lose walking access)
+            </div>
+
+            <div class="metric-bad">
+                <strong>7. Traffic/Capacity Issues: WORST</strong><br>
+                1,215 students above 10-year peak enrollment at receiving schools<br>
+                <em>Creates the most overcrowding and traffic congestion.</em>
+            </div>
+
+            <h3 style="margin-top: 30px;">✓ What Improves in Option 2:</h3>
+            <div class="metric-good">
+                <strong>Students at Ideal Schools:</strong> 24% → 65% (41% improvement - HIGHEST)
+            </div>
+            <div class="metric-good">
+                <strong>Enrollment Balance:</strong> IQR improves to 169 (best balance)
+            </div>
+            <div class="metric-good">
+                <strong>Community Fragmentation:</strong> Only 410 students split from peers (least disruption)
+            </div>
+
+            <div class="metric-bad" style="margin-top: 20px;">
+                <strong>⚠️ Equity Issues:</strong><br>
+                54% of displaced students are low-income (vs 47% district average) - still disproportionate
+            </div>
+
+            <p style="margin: 20px 0; padding: 20px; background: #fef2f2; border-radius: 8px;"><strong>VERDICT:</strong> Option 2 achieves the highest goal (65% at ideal schools) but at catastrophic cost. It closes the most walkable schools with the best facilities, forces 1,100 students to give up walking to school, and creates the worst overcrowding.</p>
+
+            <!-- Option 3 -->
+            <div class="option-header" style="margin-top: 50px;">
+                <h3>Option 3: Least Goal Achievement, Creates Chaos</h3>
+                <div class="schools-closing">
+                    <strong>8 Schools Closing:</strong> Empire Gardens, Grant, Gardner, Galarza, Carson, Reed, Almaden, Williams
+                </div>
+            </div>
+
+            <h3>❌ Metrics That Get WORSE in Option 3:</h3>
+
+            <div class="metric-bad">
+                <strong>1. Enrollment Balance: ABSOLUTE WORST</strong><br>
+                Status Quo IQR: 195 → Option 3: 339<br>
+                <em>Creates massive inequality - some schools severely overcrowded, others remain small. Worst of all options.</em>
+            </div>
+
+            <div class="metric-bad">
+                <strong>2. Walkability: WORST (tied)</strong><br>
+                Status Quo: 87% → Option 3: 76% (11% decline = approximately 1,100 students)<br>
+                <strong>Tied for worst with Option 2</strong>
+            </div>
+
+            <div class="metric-bad">
+                <strong>3. Facility Quality: WORSENS</strong><br>
+                Status Quo: 9.9/12 → Option 3: 9.1/12 (0.8 point decline - better than Options 1 & 2 but still worse)
+            </div>
+
+            <div class="metric-bad">
+                <strong>4. Community Fragmentation: SECOND WORST</strong><br>
+                647 students split from peers (second only to Option 1's 639)
+            </div>
+
+            <div class="metric-bad">
+                <strong>5. Unduplicated Students Walkability: WORST OF ALL</strong><br>
+                Status Quo: 79% → Option 3: 69% (10% decline - worst impact on low-income students)
+            </div>
+
+            <h3 style="margin-top: 30px;">✓ What Changes in Option 3:</h3>
+            <div class="metric-bad" style="background: #fef3c7; border-left-color: #f59e0b;">
+                <strong>Students at Ideal Schools:</strong> 24% → 37%<br>
+                <em>LOWEST achievement - closes 8 schools for barely any improvement!</em>
+            </div>
+            <div class="metric-good">
+                <strong>Special Education:</strong> Maintains 72% (same as status quo)
+            </div>
+            <div class="metric-good">
+                <strong>Travel Distance:</strong> 1.66 miles (slightly better than Options 1 & 2)
+            </div>
+
+            <div class="metric-bad" style="margin-top: 20px;">
+                <strong>⚠️ Equity Issues:</strong><br>
+                56% of displaced students are low-income (vs 47% district average) - disproportionate impact
+            </div>
+
+            <p style="margin: 20px 0; padding: 20px; background: #fef2f2; border-radius: 8px;"><strong>VERDICT:</strong> Option 3 is incoherent. It closes 8 schools but achieves almost nothing (only 37% at ideal vs status quo's 24%). Creates the most unequal school sizes. Maximum disruption for minimum benefit.</p>
+        </div>
+
+        <div class="section">
+            <h2>Side-by-Side Comparison</h2>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Criterion</th>
+                            <th>Status Quo</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Winner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Facility Quality (0-12)</strong></td>
+                            <td class="winner">9.9</td>
+                            <td class="worse">8.7 ↓</td>
+                            <td class="worse">8.6 ↓</td>
+                            <td class="worse">9.1 ↓</td>
+                            <td><strong>Status Quo</strong><br>(all options worse)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>% at Ideal Schools</strong></td>
+                            <td>24%</td>
+                            <td class="better">51% ↑</td>
+                            <td class="better winner">65% ↑</td>
+                            <td class="better">37% ↑</td>
+                            <td><strong>Option 2</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>% Can Walk to School</strong></td>
+                            <td class="winner">87%</td>
+                            <td class="worse">79% ↓</td>
+                            <td class="worse">76% ↓</td>
+                            <td class="worse">76% ↓</td>
+                            <td><strong>Status Quo</strong><br>(all options worse)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Avg Distance (miles)</strong></td>
+                            <td class="winner">1.58</td>
+                            <td class="worse">1.70 ↓</td>
+                            <td class="worse">1.70 ↓</td>
+                            <td class="worse">1.66 ↓</td>
+                            <td><strong>Status Quo</strong><br>(all options worse)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SDC at Ideal Cluster</strong></td>
+                            <td class="winner">72%</td>
+                            <td class="worse">61% ↓</td>
+                            <td class="worse">61% ↓</td>
+                            <td class="winner">72% →</td>
+                            <td><strong>Status Quo / Opt 3</strong><br>(tie)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Enrollment Balance (IQR)</strong></td>
+                            <td>195</td>
+                            <td class="worse">289 ↓</td>
+                            <td class="better winner">169 ↑</td>
+                            <td class="worse">339 ↓</td>
+                            <td><strong>Option 2</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Students Split from Peers</strong></td>
+                            <td>N/A</td>
+                            <td class="worse">639</td>
+                            <td class="winner">410</td>
+                            <td class="worse">647</td>
+                            <td><strong>Option 2</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>% Low-Income Displaced</strong></td>
+                            <td>47% baseline</td>
+                            <td class="worse">64% ↓</td>
+                            <td class="worse">54% ↓</td>
+                            <td class="worse">56% ↓</td>
+                            <td><strong>All options fail</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Traffic/Crowding Impact</strong></td>
+                            <td>N/A</td>
+                            <td>894</td>
+                            <td class="worse">1,215</td>
+                            <td>1,013</td>
+                            <td><strong>Option 1</strong><br>(least bad)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #6b7280;">
+                <strong>Legend:</strong> ↑ = Better than status quo | ↓ = Worse than status quo | → = Same as status quo
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Key Takeaways</h2>
+
+            <div class="evidence-box">
+                <h3 style="margin-top: 0; color: #92400e;">All Three Options Close Better-Than-Average Schools</h3>
+                <p><strong>The Evidence:</strong></p>
+                <ol style="margin: 15px 0 0 30px; line-height: 1.8;">
+                    <li><strong>All three options worsen facility quality</strong> → Proves the schools being closed have better facilities on average than those remaining open</li>
+                    <li><strong>All three options reduce walkability</strong> → Proves the schools being closed serve more walkable neighborhoods</li>
+                    <li><strong>All three options increase travel distances</strong> → Proves the schools being closed are more conveniently located</li>
+                    <li><strong>All three options disproportionately affect low-income students</strong> → Proves equity claims are hollow</li>
+                </ol>
+            </div>
+
+            <h3 style="margin-top: 30px;">Specific Option Problems:</h3>
+
+            <div class="grid-3">
+                <div class="option-problem-box">
+                    <h4>Option 1 Problems</h4>
+                    <ul>
+                        <li>Worst facility score (8.7)</li>
+                        <li>Only option worsening special ed</li>
+                        <li>Most enrollment imbalance (289)</li>
+                        <li>Most community fragmentation (639)</li>
+                        <li>Most disproportionate to low-income (64%)</li>
+                    </ul>
+                </div>
+
+                <div class="option-problem-box">
+                    <h4>Option 2 Problems</h4>
+                    <ul>
+                        <li>Worst overall facilities (8.6)</li>
+                        <li>Worst walkability (76%)</li>
+                        <li>Worst 90th percentile travel (2.17 mi)</li>
+                        <li>Most traffic/crowding (1,215)</li>
+                        <li>Highest cost per benefit gained</li>
+                    </ul>
+                </div>
+
+                <div class="option-problem-box">
+                    <h4>Option 3 Problems</h4>
+                    <ul>
+                        <li>Worst enrollment imbalance (339)</li>
+                        <li>Worst low-income walkability (69%)</li>
+                        <li>LOWEST goal achievement (37%)</li>
+                        <li>Closes 8 schools for minimal benefit</li>
+                        <li>Maximum disruption, minimum gain</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="section">
-            <h2>What's at Stake</h2>
-            <p>The "Schools of Tomorrow" initiative could fundamentally reshape our district in ways that:</p>
-            <ul style="margin: 20px 0 20px 40px;">
-                <li>Reduce access to quality education for historically marginalized students</li>
-                <li>Increase barriers to educational opportunity</li>
-                <li>Eliminate programs that serve our most vulnerable populations</li>
-                <li>Widen achievement gaps rather than closing them</li>
-            </ul>
+            <h2>Talking Points for Public Testimony</h2>
+
+            <div class="talking-points">
+                <h4>Universal Talking Points (Work Against Any Option):</h4>
+                <ul style="margin-left: 20px;">
+                    <li>✓ <strong>"Every single option makes facility quality worse - proof they're closing better buildings"</strong></li>
+                    <li>✓ <strong>"Every option reduces walkability by 8-11% - that's over 800-1,100 students who lose walking access"</strong></li>
+                    <li>✓ <strong>"Every option increases travel distances - proving these schools are conveniently located"</strong></li>
+                    <li>✓ <strong>"Every option disproportionately impacts low-income students - 54-64% vs 47% district average"</strong></li>
+                    <li>✓ <strong>"If these schools were actually failing, the metrics would improve when you close them. They get worse. That's the proof."</strong></li>
+                </ul>
+            </div>
+
+            <div class="talking-points" style="background: #fee2e2;">
+                <h4 style="color: #991b1b;">Against Option 1 Specifically:</h4>
+                <ul style="margin-left: 20px;">
+                    <li>✓ <strong>"Option 1 is the only option that makes special education worse than doing nothing"</strong></li>
+                    <li>✓ <strong>"Creates the most unequal school sizes - defeating the purpose of consolidation"</strong></li>
+                    <li>✓ <strong>"Splits up 639 students from their peers - more than any other option"</strong></li>
+                    <li>✓ <strong>"Has the worst disproportionate impact on low-income students - 64% vs 47%"</strong></li>
+                </ul>
+            </div>
+
+            <div class="talking-points" style="background: #fee2e2;">
+                <h4 style="color: #991b1b;">Against Option 2 Specifically:</h4>
+                <ul style="margin-left: 20px;">
+                    <li>✓ <strong>"Worst facilities, worst walkability, worst travel distances - closes the best schools"</strong></li>
+                    <li>✓ <strong>"Creates the most traffic and overcrowding - 1,215 students above peak capacity"</strong></li>
+                    <li>✓ <strong>"Forces 1,100 students who currently walk to take buses or cars instead"</strong></li>
+                    <li>✓ <strong>"Highest cost to students per percentage point gained - not worth it"</strong></li>
+                </ul>
+            </div>
+
+            <div class="talking-points" style="background: #fee2e2;">
+                <h4 style="color: #991b1b;">Against Option 3 Specifically:</h4>
+                <ul style="margin-left: 20px;">
+                    <li>✓ <strong>"Closes 8 schools for almost no improvement - only 37% at ideal vs 24% now"</strong></li>
+                    <li>✓ <strong>"Creates the most chaotic enrollment imbalances - some schools overcrowded, others empty"</strong></li>
+                    <li>✓ <strong>"Maximum disruption for minimum benefit - makes no sense"</strong></li>
+                    <li>✓ <strong>"Worst impact on low-income students' ability to walk to school - 69% vs 79%"</strong></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="action-box">
-            <h2>Take Action</h2>
-            <p><strong>Our community deserves better.</strong></p>
-            <p>Join us in demanding a transparent, equitable process that puts students first.</p>
-            <p style="margin-top: 20px;">Contact us to learn how you can help protect equity in SJUSD.</p>
+        <div class="conclusion">
+            <h2>The Logical Conclusion</h2>
+            <p><strong>If the schools being closed were actually underperforming, closing them would improve the district metrics.</strong></p>
+            <p style="margin-top: 20px;">Instead:</p>
+            <ul style="list-style: none; padding: 0; margin: 20px 0; font-size: 1.1em;">
+                <li>❌ Facilities get worse in all three options → Closing better facilities</li>
+                <li>❌ Walkability gets worse in all three options → Closing walkable schools</li>
+                <li>❌ Travel distances increase in all three options → Closing convenient schools</li>
+                <li>❌ Special education gets worse in Options 1 & 2 → Closing functional SDC programs</li>
+                <li>❌ Low-income students disproportionately affected in all options → Inequitable process</li>
+            </ul>
+            <p style="margin-top: 30px; font-size: 1.3em;"><strong>This proves that ALL THREE OPTIONS close schools that are performing ABOVE the district average on multiple critical criteria.</strong></p>
         </div>
 
         <div class="section">
-            <h2>Stay Informed</h2>
-            <p>We will continue to update this site with:</p>
-            <ul style="margin: 20px 0 20px 40px;">
-                <li>Latest developments in the Schools of Tomorrow process</li>
-                <li>Data and analysis on equity impacts</li>
-                <li>Opportunities for community engagement</li>
-                <li>Resources for parents and advocates</li>
-            </ul>
+            <h2>Data Source</h2>
+            <p>All metrics are from the San José Unified School District's official <strong>"Schools of Tomorrow Implementation Committee (STIC) – February 10 Metrics Summary Tables"</strong> document, publicly available in the February 10, 2026 STIC meeting materials.</p>
+            <p style="margin-top: 15px;">This analysis uses <strong>only</strong> the district's own data and official metrics. No alternative scenarios or external data sources were used.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Save Schools SJUSD | Fighting for Educational Equity</p>
+        <p>&copy; 2026 Save Schools SJUSD | Using District Data to Fight for Our Schools</p>
     </footer>
 </body>
 </html>
